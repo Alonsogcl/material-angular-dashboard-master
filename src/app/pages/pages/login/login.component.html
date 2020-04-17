@@ -2,8 +2,8 @@
     <div class="mdl-card__supporting-text color--dark-gray">
         <div class="mdl-grid">
             <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone">
-                <img src="/assets/images/logoNutriWalletAzul.png/" sizes="84x80">
-                <span class="mdl-card__title-text text-color--smooth-gray ">NUTRIWALLET</span>
+                <img src="/assets/icons/NutriBlanco1.png" sizes="308x152">
+                <!--<span class="mdl-card__title-text text-color--smooth-gray ">NUTRIWALLET</span>-->
             </div>
             <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone ">
                 <span class="blank-layout-card-name text-color--white ">Iniciar Sesión</span>
@@ -38,12 +38,12 @@
 
                     <div class="full-size color-text--red " *ngIf="error "> {{ error }}</div>
 
-                    <a routerLink="/pages/forgot-password " class="blank-layout-card-link ">¿Olvidaste tu contraseña?</a>
+                    <a routerLink="/pages/forgot-password" class="blank-layout-card-link ">¿Olvidaste tu contraseña?</a>
                 </div>
                 <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone submit-cell ">
-                    <a routerLink="/pages/sign-up " class="blank-layout-card-link ">¿No tienes una cuenta?</a>
+                    <a routerLink="/pages/sign-up" class="blank-layout-card-link ">¿No tienes una cuenta?</a>
                     <div class="mdl-layout-spacer "></div>
-                    <button class="mdl-button mdl-js-button mdl-button--raised color--light-blue " type="submit " [disabled]="loginForm.invalid ">
+                    <button routerLink="/pages/dashboard" class="mdl-button mdl-js-button mdl-button--raised color--light-blue " type="submit "><!--[disabled]="loginForm.invalid -->
             Iniciar Sesión
           </button>
                 </div>

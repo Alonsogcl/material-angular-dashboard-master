@@ -1,11 +1,10 @@
 @import '~theme/helpers';
-
 app-blank-layout .mdl-layout .mdl-layout__content {
-  padding: 16px;
-  display: flex;
+    padding: 16px;
+    display: flex;
 }
 
 // FIXME: responsibility leak
 .not-found .mdl-layout__content {
-  background-image: url('#{$image-path}/404.svg');
+    background-image: url('#{$image-path}/404.jpg');
 }

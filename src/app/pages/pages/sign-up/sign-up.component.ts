@@ -6,6 +6,7 @@ import { AuthService } from '@services/*';
 
 import { BlankLayoutCardComponent } from 'app/components/blank-layout-card';
 
+
 @Component({
   selector: 'app-sign-up',
   styleUrls: ['../../../components/blank-layout-card/blank-layout-card.component.scss'],
@@ -30,9 +31,9 @@ export class SignUpComponent extends BlankLayoutCardComponent implements OnInit 
       email: new FormControl('', [
         Validators.required,
         Validators.pattern(this.emailPattern),
-        Validators.maxLength(20),
+        Validators.maxLength(40), // Aqui tenia establecido 20 de longitud - lo modifique
       ]),
-      username: new FormControl('', [Validators.required, Validators.maxLength(10)]),
+      username: new FormControl('', [Validators.required, Validators.maxLength(40)]), // Aqui tenia establecido 10 de longitud
     });
     this.email = this.signupForm.get('email');
     this.password = this.signupForm.get('password');

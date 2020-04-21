@@ -31,6 +31,18 @@
                         </div>
                     </div>
 
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-size" [class.is-invalid]="password.invalid && (password.dirty || password.touched)" [class.is-valid]="password.valid && (password.dirty || password.touched)" id="forRass">
+                        <input formControlName="password" (change)="onInputChange($event)" class="mdl-textfield__input" type="password" id="password">
+                        <label class="mdl-textfield__label" for="password">Confirmar Contraseña</label>
+                        <div *ngIf="password.invalid && (password.dirty || password.touched)">
+                            <!--Se copio tal cual el <div> anterior. Falta cambiar la validación que valide si coincide con la anterior-->
+                            <span *ngIf="password.errors.required" class="mdl-textfield__error">
+                Es necesario confirme su contraseña. <span class="color-text--orange"> Por favor, confirme su contraseña.</span>
+                            </span>
+                        </div>
+
+                    </div>
+
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-size" [class.is-invalid]="email.invalid && (email.dirty || email.touched)" [class.is-valid]="email.valid && (email.dirty || email.touched)">
                         <input formControlName="email" pattern="{{emailPattern}}" (change)="onInputChange($event)" class="mdl-textfield__input" type="text" id="email">
                         <label class="mdl-textfield__label" for="email">Correo Electrónico</label>

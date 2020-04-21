@@ -43,15 +43,9 @@
                         </div>
                     </div>
 
-                    <div class="mdl-grid">
-                        <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" id="birthday" value="25 May, 1977" />
-                            <label class="mdl-textfield__label" for="birthday">Birthday</label>
-                        </div>
-
-                        <div class="mdl-cell mdl-cell--6-col">
-                            <material-angular-select [data]="['Male', 'Female']" [label]="'Gender'" [name]="'gender'" [currentValue]="'Male'" [fixHeight]="true"></material-angular-select>
-                        </div>
+                    <div mdl-textfield mdl-js-textfield mdl-textfield--floating-label full-size>
+                        <!--[data] [label]... Estos datos estan declarados en el archivo material-angular-select.component.d.ts-->
+                        <material-angular-select [data]="['Estudiante', 'Docente', 'Administrador']" [label]="'Tipo de Usuario:'" [name]="'tipoUsuario'" [currentValue]="'Estudiante'" [fixHeight]="true"></material-angular-select>
                     </div>
 
                     <label baseCheckbox color="light-blue" class="checkbox--inline" inline></label>

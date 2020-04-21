@@ -10,8 +10,8 @@ import { ForgotPasswordComponent } from './forgot-password';
 import { LoginComponent } from './login';
 import { PagesRoutingModule } from './pages-routing.module';
 import { SignUpComponent } from './sign-up';
-import { MaterialAngularSelectModule } from 'material-angular-select';
-
+import { MaterialAngularSelectModule } from 'material-angular-select'; // Importado para usarse en sign-up components
+                                                                      // Copiado de forms.module.ts Agregado para lista desplegable Estudiante Administrador
 @NgModule({
   imports: [
     CommonModule,
@@ -20,7 +20,7 @@ import { MaterialAngularSelectModule } from 'material-angular-select';
     FormsModule,
     ReactiveFormsModule,
     TooltipModule,
-    MaterialAngularSelectModule,
+    MaterialAngularSelectModule, // Importado para usarse en sign-up components
   ],
   declarations: [
     ErrorComponent,

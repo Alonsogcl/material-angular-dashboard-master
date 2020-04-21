@@ -42,8 +42,9 @@
                 </div>
                 <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone submit-cell ">
                     <a routerLink="/pages/sign-up" class="blank-layout-card-link ">¿No tienes una cuenta?</a>
-                    <div class="mdl-layout-spacer "></div>
-                    <button routerLink="/pages/dashboard" class="mdl-button mdl-js-button mdl-button--raised color--light-blue " type="submit "><!--[disabled]="loginForm.invalid -->
+                    <div class="mdl-layout-spacer"></div>
+                    <button class="mdl-button mdl-js-button mdl-button--raised color--light-blue" type="submit" [disabled]="loginForm.invalid">
+                    <!--<button routerLink="/pages/dashboard" class="mdl-button mdl-js-button mdl-button--raised color--light-blue " type="submit ">[disabled]="loginForm.invalid -->
             Iniciar Sesión
           </button>
                 </div>

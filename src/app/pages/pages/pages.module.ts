@@ -10,6 +10,7 @@ import { ForgotPasswordComponent } from './forgot-password';
 import { LoginComponent } from './login';
 import { PagesRoutingModule } from './pages-routing.module';
 import { SignUpComponent } from './sign-up';
+import { MaterialAngularSelectModule } from 'material-angular-select';
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { SignUpComponent } from './sign-up';
     FormsModule,
     ReactiveFormsModule,
     TooltipModule,
+    MaterialAngularSelectModule,
   ],
   declarations: [
     ErrorComponent,

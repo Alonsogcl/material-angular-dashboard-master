@@ -48,7 +48,8 @@ export class LoginComponent extends BlankLayoutCardComponent implements OnInit {
         .subscribe(res => this.router.navigate(['/app/dashboard']),
                    error => this.error = error.message);
     }
-  }
+  }  
+  
 
   public onInputChange(event) {
     event.target.required = true;

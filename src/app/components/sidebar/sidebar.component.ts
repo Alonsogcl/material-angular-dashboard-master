@@ -11,7 +11,8 @@ export class SidebarComponent extends BaseSidebarComponent {
   public title = 'NutriWallet';
   public menu = [
     { name: 'Dashboard', link: '/app/dashboard', icon: 'dashboard' },
- /* { name: 'Custom Dashboard', link: '/app/dashboard-custom', icon: 'view_quilt' },
+ // Aqui iniciaba el comentario
+  { name: 'Custom Dashboard', link: '/app/dashboard-custom', icon: 'view_quilt' },
     {
       name: 'UI',
       children: [
@@ -51,6 +52,6 @@ export class SidebarComponent extends BaseSidebarComponent {
       { name: '404', link: '/pages/error' },
       ],
       icon: 'pages',
-    },*/
+    }, // Aqui terminaba el comentario
   ];
 }

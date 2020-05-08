@@ -5,23 +5,23 @@ export class NotificationMenuService {
   public getNotifications(): object[] {
     return [
       {
-        text: 'You have 3 new orders.',
-        time: 'just now',
+        text: 'Tienes 3 nuevas solicitudes.',
+        time: 'Ahora',
         icon: 'plus_one',
         color: 'primary',
       }, {
-        text: 'Database error',
+        text: 'Error en la Base de Datos',
         time: '1 min',
         icon: 'error_outline',
         color: 'secondary',
       }, {
-        text: 'The Death Star is built!',
+        text: 'La Dieta está lista!',
         time: '2 hours',
         icon: 'new_releases',
         color: 'primary',
       }, {
-        text: 'You have 4 new mails.',
-        time: '5 days',
+        text: 'Tienes 4 nuevos correos.',
+        time: '5 dias',
         icon: 'mail_outline',
         color: 'primary',
       },

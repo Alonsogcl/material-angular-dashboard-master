@@ -8,7 +8,7 @@ import { SidebarComponent as BaseSidebarComponent } from 'theme/components/sideb
   templateUrl: '../../../theme/components/sidebar/sidebar.component.html',
 })
 export class SidebarComponent extends BaseSidebarComponent {
-  public title = 'NutriWallet';
+  /*public title = 'NutriWallet';*/
   public menu = [
     { name: 'Dashboard', link: '/app/dashboard', icon: 'dashboard' },
  // Aqui iniciaba el comentario
@@ -36,7 +36,7 @@ export class SidebarComponent extends BaseSidebarComponent {
       icon: 'view_comfy',
     },
     { name: 'Components', link: '/app/components', icon: 'developer_board' },
-    { name: 'Account', link: '/app/forms', icon: 'person' },
+    { name: 'Mi cuenta', link: '/app/forms', icon: 'person' },
     {
       name: 'Maps', icon: 'map', children: [
       { name: 'Simple map', link: '/maps/simple' },

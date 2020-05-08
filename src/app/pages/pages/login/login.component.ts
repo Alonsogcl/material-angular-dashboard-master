@@ -27,7 +27,7 @@ export class LoginComponent extends BlankLayoutCardComponent implements OnInit {
       email: new FormControl('', [
         Validators.required,
         Validators.pattern(this.emailPattern),
-        Validators.maxLength(20),
+        Validators.maxLength(40), // Longitud modificada, tenia 20
       ]),
     });
     this.email = this.loginForm.get('email');
@@ -49,7 +49,7 @@ export class LoginComponent extends BlankLayoutCardComponent implements OnInit {
                    error => this.error = error.message);
     }
   }  
-  
+
 
   public onInputChange(event) {
     event.target.required = true;

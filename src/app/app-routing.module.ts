@@ -13,15 +13,18 @@ import { FormsComponent } from './pages/forms';
   imports: [
     RouterModule.forRoot(
       [
-        { path: '', redirectTo: 'app/dashboard', pathMatch: 'full' },
-        { path: 'app', component: CommonLayoutComponent, children: [
-          { path: 'dashboard', component: DashboardComponent, pathMatch: 'full' },
-          { path: 'dashboard-custom', component: Dashboard2Component, pathMatch: 'full' },
-          { path: 'forms', component: FormsComponent, pathMatch: 'full' },
-          { path: 'charts', component: ChartsComponent, pathMatch: 'full' },
-          { path: 'components', component: ComponentsComponent, pathMatch: 'full' },
-          { path: '**', redirectTo: '/pages/404' },
-        ] }, // add 'canActivate: AuthGuard' for catching unauth users
+        { path: '', redirectTo: '/pages/login', pathMatch: 'full' },
+        //{ path: '', redirectTo: 'app/dashboard', pathMatch: 'full' },
+        {
+          path: 'app', component: CommonLayoutComponent, children: [
+            { path: 'dashboard', component: DashboardComponent, pathMatch: 'full' },
+            { path: 'dashboard-custom', component: Dashboard2Component, pathMatch: 'full' },
+            { path: 'forms', component: FormsComponent, pathMatch: 'full' },
+            { path: 'charts', component: ChartsComponent, pathMatch: 'full' },
+            { path: 'components', component: ComponentsComponent, pathMatch: 'full' },
+            { path: '**', redirectTo: '/pages/404' },
+          ]
+        }, // add 'canActivate: AuthGuard' for catching unauth users
         { path: 'ui', loadChildren: './pages/ui/ui.module#UIModule' },
         { path: 'maps', loadChildren: './pages/maps/maps.module#MapsModule' },
         { path: 'pages', loadChildren: './pages/pages/pages.module#PagesModule' },
@@ -33,4 +36,4 @@ import { FormsComponent } from './pages/forms';
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
